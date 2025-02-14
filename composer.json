@@ -1,0 +1,28 @@
+{
+    "name": "smit-backend/database-failover-sentinel",
+    "description": "High-availability MySQL/PostgreSQL replica sentinel automatically promoting standby replicas and updating routing upon primary failure.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "email": "sync2sale@gmail.com",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\DBSentinel\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\DBSentinel\\PackageServiceProvider"
+            ]
+        }
+    }
+}
